@@ -291,6 +291,14 @@ ul {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.grid--4-columns {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.margin-top {
+  margin-top: 4.8rem;
+}
+
 /*MEALS - SECTION*/
 .section-meals {
   padding: 9.6rem 0;
@@ -449,4 +457,124 @@ blockquote {
 
 .gallery-item img:hover {
   transform: scale(1.1);
+}
+
+/*SECTION PRICING*/
+.section-pricing {
+  padding: 9.6rem 0;
+}
+
+.pricing-plan {
+  padding: 4.8rem;
+  border-radius: 10px;
+  border: 3px solid #fdf2e9;
+  width: 75%;
+  /* width: 80%;
+  margin: 0 auto; */
+}
+
+.pricing-plan ul {
+  padding: 0;
+}
+
+.pricing-plan--starter {
+  justify-self: end;
+}
+
+.pricing-plan--complete {
+  background-color: #fdf2e9;
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-plan--complete::before {
+  content: "Best Value";
+  background-color: #ffd43b;
+  padding: 0.8rem 8rem;
+  color: #333;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: absolute;
+  top: 6%;
+  right: -18%;
+  transform: rotate(45deg);
+}
+
+.plan-content {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+
+.plan-name {
+  color: var(--brandColor);
+  font-weight: bold;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 3.2rem;
+}
+
+.plan-price {
+  font-size: 6.2rem;
+  font-weight: bold;
+  color: #333;
+  margin: 1.6rem 0;
+}
+
+.plan-price span {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-right: 0.8rem;
+}
+
+.plan-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #6f6f6f;
+}
+
+.plan-btn {
+  margin-top: 4.6rem;
+  text-align: center;
+}
+
+.plan-details {
+  margin-top: 4.8rem;
+}
+
+.plan-details p {
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+/*FEATURE*/
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature-icon {
+  color: var(--brandColor);
+  height: 3.2rem;
+  width: 3.2rem;
+  background-color: #fdf2e9;
+  padding: 1.6rem;
+  border-radius: 50%;
+  margin-bottom: 3.2rem;
+}
+
+.feature-title {
+  font-size: 2.4rem;
+  color: var(--gray);
+  margin: 0;
+  margin-bottom: 1.6rem;
+  font-weight: bold;
+}
+
+.feature-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  text-align: center;
+  margin: 0;
 }
