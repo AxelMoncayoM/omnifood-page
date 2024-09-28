@@ -300,6 +300,10 @@ ul {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.grid--5-columns {
+  grid-template-columns: repeat(5, 1fr);
+}
+
 .margin-top {
   margin-top: 4.8rem;
 }
@@ -585,6 +589,10 @@ blockquote {
 }
 
 /*CTA SECTION*/
+.section-cta {
+  padding: 0 0 9.6rem 0;
+}
+
 .cta {
   overflow: hidden;
   display: grid;
@@ -673,4 +681,80 @@ blockquote {
 .cta *:focus {
   outline: none;
   box-shadow: 0 0 0 0.8rem rgba(255, 255, 255, 0.5);
+}
+
+/*FOOTER*/
+.footer {
+  padding: 9.6rem 0 0 0;
+  border-top: 2px solid #eee;
+}
+
+.logo-column {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.logo-column .logo {
+  display: block;
+  margin-bottom: 1.8rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 2.4rem;
+  padding: 0;
+  justify-content: center;
+}
+
+.social-links ion-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  color: #767676;
+  line-height: 1.6;
+  text-align: center;
+  background-color: var(--brandColor);
+  color: var(--white);
+  margin: 0;
+  padding: 1.6rem 0;
+  font-weight: bold;
+}
+
+.footer-nav,
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.contact {
+  font-style: normal;
+  font-size: 1.6rem;
+}
+
+.contact p {
+  margin: 0;
+  color: #767676;
+}
+
+.footer-nav a {
+  display: block;
+  font-size: 1.6rem;
+  color: #767676;
+  transition: color 300ms ease;
+}
+
+.footer-nav a:hover {
+  color: #555;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 3.2rem;
 }
